@@ -2,6 +2,12 @@
 @import url(http://fonts.googleapis.com/css?family=Cabin:700);
 @import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
 
+@bleufonce: #1c374e;
+@bleuroi: #285275;
+@bleu: #356d9c;
+@grisfonce: #828282;
+@grisclair: #9b9b9b;
+
 // Default
 html {
     background: url('../images/back.jpg') no-repeat center center fixed;
@@ -16,7 +22,7 @@ body {
 }
 
 #apercu {
-    margin: 100px auto;
+    margin: 100px auto 20px auto;
     width: 300px;
     position: relative;
 }
@@ -86,12 +92,12 @@ body {
     text-align: center;
 }
 
-#headerImage {
-    img {
-        width: 300px;
-        z-index: -1;
-        position: absolute;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
+.btn-spe {
+    border-color: @bleu;
+    
+    &:hover {
+        background-color: @bleu;
+        border-color: @bleu;
+        color: #fff;
     }
 }
