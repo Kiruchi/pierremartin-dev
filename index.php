@@ -6,22 +6,21 @@
 		<meta name="description" content="Page description">
 		<meta name="author" content="Pierre MARTIN" >
 		<meta charset="utf-8">
-		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-		<link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
-		<link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+		
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
-
-		<!--[if IE 7]>
-			<link href="css/font-awesome-ie7.css" rel="stylesheet">
-		<![endif]-->
 
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 
 		<!-- Import JQuery -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+		<!-- Ajout du JS à la fin pour gagner en rapidité -->
+		<script>
+			
+		</script>
 	</head>
 
 	<body>
@@ -30,42 +29,26 @@
 			
 		</header>
 
-		<section>
-			<div id="wrapper">
-			<form id="login" class="front box">
-			  <div class="default"><i class="fa fa-android"></i><h1>Press login</h1></div>
-			<input type="text" placeholder="username" />
-			<input type="password" placeholder="password" />
-			<button class="login"><i class="fa fa-check"></i></button>
-			</form>
 
+		<section id="apercu">
 			<div class="back box">
-			<img src="http://i.imgur.com/sdDkYt1.png"/>
-			<ul>
-			  <li><i class="fa fa-file"></i> New <span>32</span></li>
-			  <li><i class="fa fa-flag"></i> Priority <span>12</span></li>
-			  <li><i class="fa fa-user"></i> Assigned <span>5/17</span></li>
-			  <li><i class="fa fa-trash"></i> Deleted <span>14</span></li>  
-			</ul>
-			<button class="logout"><i class="fa fa-off"></i></button>
-			</div>
+				<div id="backImage">
+					<img src="images/photo.jpg"/>
+				</div>
+				<ul>
+				  <li><i class="fa fa-file"></i> New <span>32</span></li>
+				  <li><i class="fa fa-flag"></i> Priority <span>12</span></li>
+				  <li><i class="fa fa-user"></i> Assigned <span>5/17</span></li>
+				  <li><i class="fa fa-trash"></i> Deleted <span>14</span></li>  
+				</ul>
+				<a class="btn btn-default btn-lg btn-block" href="#" role="button">Entrer sur le site</a>
 			</div>
 		</section>
+
 
 		<footer id="footer">
 			
 		</footer>
-
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript">
-			$(".login").click(function() {
-			  $("#wrapper").addClass('flip');
-			});
-
-			$(".logout").click(function() {
-			  $("#wrapper").removeClass('flip');
-			});
-		</script>
 
 	</body>
 
