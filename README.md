@@ -1,6 +1,6 @@
 pierremartin-dev
 ================
 
-Site web perso, CV
+Personal website, CV
 
 WIP
